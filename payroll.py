@@ -18,14 +18,13 @@ inss = (salary*10)/100
 fgts = (salary*11)/100
 current = (salary*ir)/100
 _ir=(salary*ir)/100
-
 descount=_ir+inss
 liquid= salary-descount
 
 
-print("Salário bruto      : %0.2f " % salary)
-print("(-) IR ({}%)       : {} " .format(ir,_ir))
-print("(-) INSS (10 %)    : {} " .format(inss) )
-print("FGTS               : %0.2f " % fgts)
-print("Total de descontos : %0.2f" % descount)
-print("Total Liquido      : %0.2f " % liquid)
+print("Salário bruto      : {:.2f}" .format(salary))
+print("(-) IR ({:2.0f}%)       : {:.2f}" .format(ir,_ir))
+print("(-) INSS (10 %)    : {:.2f}" .format(inss))
+print("FGTS               : {:.2f}" .format(fgts))
+print("Total de descontos : {:.2f}" .format(descount))
+print("Total Liquido      : {:.2f}" .format(liquid))
